@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xmlns="http://www.demandware.com/xml/impex/metadata/2006-10-31">
+    <type-extension type-id="SitePreferences">
+        <custom-attribute-definitions>
+            <attribute-definition attribute-id="stacklaTrackingEnabled">
+                <display-name xml:lang="x-default">Stackla Tracking Enabled</display-name>
+                <description xml:lang="x-default">Enable Stackla tracking pixel</description>
+                <type>boolean</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <default-value>false</default-value>
+            </attribute-definition>
+            <attribute-definition attribute-id="stacklaTrackingPixelUrl">
+                <display-name xml:lang="x-default">Stackla Tracking Pixel URL</display-name>
+                <description xml:lang="x-default">Stackla tracking pixel URL</description>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+                <default-value>https://stp.stack.la/record.png</default-value>
+            </attribute-definition>
+            <attribute-definition attribute-id="stacklaWidgetAvailableProductsOnly">
+                <display-name xml:lang="x-default">Stackla Widget Available Products Only</display-name>
+                <description xml:lang="x-default">Don't show Product information for unavailable products</description>
+                <type>boolean</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <default-value>false</default-value>
+            </attribute-definition>
+            <attribute-definition attribute-id="stacklaWidgetEnabled">
+                <display-name xml:lang="x-default">Stackla PDP Widget Enabled</display-name>
+                <description xml:lang="x-default">Enable PDP Stackla widget</description>
+                <type>boolean</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <default-value>false</default-value>
+            </attribute-definition>
+            <attribute-definition attribute-id="stacklaWidgetFilter">
+                <display-name xml:lang="x-default">Stackla Widget Filter</display-name>
+                <description xml:lang="x-default">The filter/segment of content to show</description>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="stacklaWidgetId">
+                <display-name xml:lang="x-default">Stackla Widget ID</display-name>
+                <description xml:lang="x-default">Widget ID</description>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="stacklaWidgetTagGroup">
+                <display-name xml:lang="x-default">Stackla Widget Tag Group</display-name>
+                <description xml:lang="x-default">Show Products for a specific locale</description>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="stacklaWidgetTagsGroupedAs">
+                <display-name xml:lang="x-default">Stackla Widget Tags Grouped As</display-name>
+                <description xml:lang="x-default">Apply 'AND'/'OR' grouping to Tags</description>
+                <type>enum-of-string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <value-definitions>
+                    <value-definition>
+                        <display xml:lang="x-default">AND</display>
+                        <value>and</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">OR</display>
+                        <value>or</value>
+                    </value-definition>
+                </value-definitions>
+            </attribute-definition>
+            <attribute-definition attribute-id="stacklaWidgetTtl">
+                <display-name xml:lang="x-default">Stackla Widget TTL</display-name>
+                <description xml:lang="x-default">Time to live</description>
+                <type>int</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <default-value>60</default-value>
+            </attribute-definition>
+        </custom-attribute-definitions>
+        <group-definitions>
+            <attribute-group group-id="Stackla Configs">
+                <display-name xml:lang="x-default">Stackla</display-name>
+                <attribute attribute-id="stacklaTrackingEnabled"/>
+                <attribute attribute-id="stacklaTrackingPixelUrl"/>
+                <attribute attribute-id="stacklaWidgetAvailableProductsOnly"/>
+                <attribute attribute-id="stacklaWidgetEnabled"/>
+                <attribute attribute-id="stacklaWidgetFilter"/>
+                <attribute attribute-id="stacklaWidgetId"/>
+                <attribute attribute-id="stacklaWidgetTagGroup"/>
+                <attribute attribute-id="stacklaWidgetTagsGroupedAs"/>
+                <attribute attribute-id="stacklaWidgetTtl"/>
+            </attribute-group>
+        </group-definitions>
+    </type-extension>
+</metadata>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jobs xmlns="http://www.demandware.com/xml/impex/jobs/2015-07-01">
+    <job job-id="Stackla-ProductFeed" priority="0">
+        <description/>
+        <parameters/>
+        <flow>
+            <context site-id="RefArch"/>
+            <step step-id="Export Product Feed" type="custom.Stackla.ExportProductFeed" enforce-restart="false">
+                <description/>
+                <parameters>
+                    <parameter name="TargetFolder">default/feeds</parameter>
+                    <parameter name="Filename">stackla_product_feed</parameter>
+                    <parameter name="OverwriteExportFile">true</parameter>
+                    <parameter name="NoFileFoundStatus">OK</parameter>
+                    <parameter name="IsDisabled">false</parameter>
+                </parameters>
+            </step>
+        </flow>
+        <rules/>
+        <triggers>
+            <run-recurring enabled="false">
+                <recurrence>
+                    <date-from>2020-07-07Z</date-from>
+                    <start-time>04:45:09.000Z</start-time>
+                    <interval>24h</interval>
+                    <day-of-week/>
+                </recurrence>
+            </run-recurring>
+        </triggers>
+    </job>
+</jobs>

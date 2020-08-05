@@ -1,0 +1,10 @@
+<script>
+    (function (d, id) {
+        if (d.getElementById(id)) return;
+        var t = d.createElement('script');
+        t.type = 'text/javascript';
+        t.src = '//assetscdn.stackla.com/media/js/widget/fluid-embed.js';
+        t.id = id;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(t);
+    }(document, 'stackla-widget-js'));
+</script>

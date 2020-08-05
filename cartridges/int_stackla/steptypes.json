@@ -1,0 +1,80 @@
+{
+    "step-types": {
+        "script-module-step": [
+            {
+                "@type-id": "custom.Stackla.ExportProductFeed",
+                "description": "Export Product Feed XML File to Impex Folder",
+                "module": "int_stackla/cartridge/scripts/jobsteps/ExportProductFeed.js",
+                "function": "Run",
+                "parameters": {
+                    "parameters": [
+                        {
+                            "@name": "Products",
+                            "@type": "string",
+                            "@required": false,
+                            "description": "Product IDs separated by commas (optional)",
+                            "@trim": true
+                        },
+                        {
+                            "@name": "TargetFolder",
+                            "@type": "string",
+                            "@required": false,
+                            "description": "Remote folder on Server, relative to home directory",
+                            "@trim": true,
+                            "default-value": "default/feeds"
+                        },
+                        {
+                            "@name": "Filename",
+                            "@type": "string",
+                            "@required": false,
+                            "description": "File name",
+                            "@trim": true,
+                            "default-value": "stackla_product_feed"
+                        },
+                        {
+                            "@name": "OverwriteExportFile",
+                            "@type": "boolean",
+                            "@required": false,
+                            "description": "Overwrite Export File?",
+                            "@trim": true,
+                            "default-value": true
+                        },
+                        {
+                            "@name": "NoFileFoundStatus",
+                            "@type": "string",
+                            "@required": true,
+                            "@trim": true,
+                            "enum-values": {
+                                "value": [
+                                    "OK",
+                                    "ERROR"
+                                ]
+                            },
+                            "description": "Exit code in case no files were found.",
+                            "default-value": "OK"
+                        },
+                        {
+                            "@name": "IsDisabled",
+                            "description": "Mark the step as disabled. This will skip the step and returns a OK status",
+                            "@type": "boolean",
+                            "@required": false,
+                            "@trim": true
+                        }
+                    ]
+                },
+                "status-codes": {
+                    "status": [
+                        {
+                            "@code": "ERROR",
+                            "description": "Used when an error occurred."
+                        },
+                        {
+                            "@code": "OK",
+                            "description": "Used when everything went well."
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

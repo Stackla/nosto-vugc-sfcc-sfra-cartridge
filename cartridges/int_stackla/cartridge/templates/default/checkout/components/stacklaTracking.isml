@@ -1,0 +1,1 @@
+<img src="${dw.system.Site.getCurrent().getCustomPreferenceValue('stacklaTrackingPixelUrl')}?event=${trackingEvent}&ext_currency=${pdict.stacklaTracking.currency}&product_id=${pdict.stacklaTracking.product}&ext_price=${pdict.stacklaTracking.price}&ext_quantity=${pdict.stacklaTracking.quantity}" width="1px" height="1px" />

@@ -1,0 +1,11 @@
+<isset name="currentSite" value="${dw.system.Site.getCurrent()}" scope="page" />
+<div class="stackla-widget" data-id="${currentSite.getCustomPreferenceValue('stacklaWidgetId')}"
+    data-tags="ext:${product.id}"
+    <isif condition="${currentSite.getCustomPreferenceValue('stacklaWidgetFilter')}">data-filter="${currentSite.getCustomPreferenceValue('stacklaWidgetFilter')}"</isif>
+    <isif condition="${currentSite.getCustomPreferenceValue('stacklaWidgetTagGroup')}">data-tag-group="${currentSite.getCustomPreferenceValue('stacklaWidgetTagGroup')}"</isif>
+    <isif condition="${currentSite.getCustomPreferenceValue('stacklaWidgetAvailableProductsOnly')}">data-available-products-only="${currentSite.getCustomPreferenceValue('stacklaWidgetAvailableProductsOnly')}"</isif>
+    <isif condition="${currentSite.getCustomPreferenceValue('stacklaWidgetTagsGroupedAs')}">data-tags-grouped-as="${currentSite.getCustomPreferenceValue('stacklaWidgetTagsGroupedAs')}"</isif>
+    data-ttl="${currentSite.getCustomPreferenceValue('stacklaWidgetTtl')}"
+></div>
+
+<isinclude template="product/components/stacklaWidgetJs" />

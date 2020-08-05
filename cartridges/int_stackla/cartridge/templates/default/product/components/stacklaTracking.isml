@@ -1,0 +1,1 @@
+<img src="${dw.system.Site.getCurrent().getCustomPreferenceValue('stacklaTrackingPixelUrl')}?product_id=${product.id}&event=product_page_view" width="1px" height="1px" />
