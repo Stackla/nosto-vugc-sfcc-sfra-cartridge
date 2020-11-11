@@ -2,7 +2,6 @@
 
 var path = require('path');
 var jsFiles = require('sgmf-scripts').createJsPath();
-var argv = require('yargs').argv;
 var staticDirectory = './cartridges/int_stackla/cartridge/static';
 
 module.exports = [
