@@ -1,4 +1,4 @@
-# Stackla
+<img src="cartridges/int_stackla/cartridge/static/default/images/stackla/stackla-logo.png?raw=true" alt="Stackla | User-Generated Content (UGC) Platform & Asset Manager" width="180">
 
 This is a repository for the SFCC Stackla Integration. It enables:
 
@@ -25,7 +25,11 @@ We will be using VS code as our standard IDE. Please install the following plugi
 
 2. Build Stackla:
 
-    - cd into `./int_stackla`
+    - cd into `./link_stackla`
     - Run `npm install` to install all of the local dependencies (node LTS release recommended)
     - Run `npm run build` to compile base js, css and plugins
     - Add the `int_stackla` cartridge to your cartridge path in _Administration > Sites > Manage Sites > RefArch - Settings_
+
+## Platform
+
+Read more information about the [Stackla | User-Generated Content (UGC) Platform & Asset Manager](https://stackla.com/).

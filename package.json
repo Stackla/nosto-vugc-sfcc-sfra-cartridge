@@ -7,6 +7,9 @@
         "node": ">=4.0 <12.0.0"
     },
     "scripts": {
+        "test": "sgmf-scripts --test test/unit/**/*.js",
+        "cover": "sgmf-scripts --cover 'test/unit'",
+        "test:integration": "sgmf-scripts --integration 'test/integration/**/*.js'",
         "compile:js": "sgmf-scripts --compile js",
         "build": "npm run compile:js;",
         "lint": "npm run lint:css && npm run lint:js",
@@ -17,7 +20,7 @@
         "type": "git",
         "url": "git+https://github.com/SalesforceCommerceCloud/storefront-reference-architecture.git"
     },
-    "author": "Ilya Volodin <ivolodin@demandware.com>",
+    "author": "Donna Wanczowski <donna@fenomdigital.com>",
     "license": "ISC",
     "homepage": "https://github.com/SalesforceCommerceCloud/storefront-reference-architecture",
     "devDependencies": {
@@ -28,6 +31,8 @@
         "babel-core": "^6.26.3",
         "babel-loader": "^8.1.0",
         "babel-preset-env": "^1.7.0",
+        "chai": "^3.5.0",
+        "chai-subset": "^1.6.0",
         "eslint": "^7.4.0",
         "eslint-config-airbnb-base": "^5.0.3",
         "prettier": "^2.0.5",
@@ -55,6 +60,7 @@
         ]
     },
     "paths": {
-        "base": "../storefront-reference-architecture/cartridges/app_storefront_base/"
+        "base": "../storefront-reference-architecture/cartridges/app_storefront_base/",
+        "wishlist": "../plugin_wishlists/cartridges/plugin_wishlists/"
     }
 }
