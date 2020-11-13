@@ -9,7 +9,6 @@ module.exports = [
         mode: 'production',
         name: 'js',
         entry: jsFiles,
-        devtool: 'source-map',
         output: {
             path: path.resolve(path.resolve(staticDirectory)),
             filename: '[name].js'
