@@ -60,7 +60,6 @@
         ]
     },
     "paths": {
-        "base": "../storefront-reference-architecture/cartridges/app_storefront_base/",
-        "wishlist": "../plugin_wishlists/cartridges/plugin_wishlists/"
+        "base": "../storefront-reference-architecture/cartridges/app_storefront_base/"
     }
 }
