@@ -1,5 +1,5 @@
 {
-    "name": "int_stackla",
+    "name": "link_stackla",
     "version": "20.1.0",
     "description": "Stackla",
     "main": "index.js",
@@ -18,11 +18,11 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/SalesforceCommerceCloud/storefront-reference-architecture.git"
+        "url": "git+https://github.com/SalesforceCommerceCloud/link_stackla.git"
     },
     "author": "Donna Wanczowski <donna@fenomdigital.com>",
     "license": "ISC",
-    "homepage": "https://github.com/SalesforceCommerceCloud/storefront-reference-architecture",
+    "homepage": "https://github.com/SalesforceCommerceCloud/link_stackla",
     "devDependencies": {
         "@babel/core": "^7.9.6",
         "@babel/plugin-proposal-object-rest-spread": "^7.9.6",
