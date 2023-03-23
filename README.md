@@ -1,11 +1,11 @@
-<img src="cartridges/int_stackla/cartridge/static/default/images/stackla/vugc-logo.png?raw=true" alt="VUGC | User-Generated Content (UGC) Platform & Asset Manager" width="180">
+<img src="cartridges/int_stackla/cartridge/static/default/images/stackla/vugc-logo.png?raw=true" alt="Visual UGC | User-Generated Content (UGC) Platform & Asset Manager" width="180">
 
-This is a repository for the SFCC VUGC Integration. It enables:
+This is a repository for the SFCC Visual UGC Integration. It enables:
 
--   Product feed to VUGC
--   VUGC tracking pixels
--   VUGC front end widget for product detail pages
--   VUGC front end widget for page designer
+-   Product feed to Visual UGC
+-   Visual UGC tracking pixels
+-   Visual UGC front end widget for product detail pages
+-   Visual UGC front end widget for page designer
 
 ## VS Code Setup
 
@@ -23,7 +23,7 @@ We will be using VS code as our standard IDE. Please install the following plugi
     - Run `npm run build` to compile base js, css and plugins
     - Add the SFRA storefront cartridge to your cartridge path in _Administration > Sites > Manage Sites > RefArch - Settings_
 
-2. Build VUGC:
+2. Build Visual UGC:
 
     - cd into `./vugc-sfcc-main-cartridge`
     - Run `npm install` to install all of the local dependencies (node LTS release recommended)
@@ -32,4 +32,4 @@ We will be using VS code as our standard IDE. Please install the following plugi
 
 ## Platform
 
-Read more information about the [VUGC | User-Generated Content (UGC) Platform & Asset Manager](https://stackla.com/).
+Read more information about the [Visual UGC | User-Generated Content (UGC) Platform & Asset Manager](https://stackla.com/).
