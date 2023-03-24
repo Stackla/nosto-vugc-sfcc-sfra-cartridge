@@ -1,4 +1,4 @@
-<img src="cartridges/int_stackla/cartridge/static/default/images/stackla/vugc-logo.png?raw=true" alt="Visual UGC | User-Generated Content (UGC) Platform & Asset Manager" width="180">
+<img src="cartridges/int_stackla/cartridge/static/default/images/stackla/nosto-logo.png?raw=true" alt="Visual UGC | User-Generated Content (UGC) Platform & Asset Manager" width="180">
 
 This is a repository for the SFCC Visual UGC Integration. It enables:
 
@@ -32,4 +32,4 @@ We will be using VS code as our standard IDE. Please install the following plugi
 
 ## Platform
 
-Read more information about the [Visual UGC | User-Generated Content (UGC) Platform & Asset Manager](https://stackla.com/).
+Read more information about the [Nosto Visual UGC | User-Generated Content (UGC) Platform & Asset Manager](https://www.nosto.com/products/visual-ugc/).
